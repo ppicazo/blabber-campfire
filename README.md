@@ -16,14 +16,14 @@ require "blabber"
 
 all_standard_loglevels = ['INFO', 'WARN', 'ERROR', 'DEBUG']
 
-blabber = Blabber::Blabber.new(
-    'Blabber::Console' => {'loglevels' => all_standard_loglevels},
-    'Blabber::Campfire' => {
+blabber = Blabber::Blabber.new([
+      {'channel' =>'Blabber::Console', 'loglevels' => all_standard_loglevels},
+      {'channel' =>'Blabber::Campfire', 
         'account' => 'campfireaccount', 
         'token' => 'abc123', 
         'room' => 'My Room',
         'loglevels' => ['INFO', 'WARN', 'ERROR', 'DEBUG', 'CAMPFIRE']
-    })
+    }])
 
 blabber.debug("debug msg")
 blabber.info("info msg")
