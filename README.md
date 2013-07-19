@@ -1,7 +1,7 @@
 Blabber-Campfire
 ===
 
-Blabber-Campfire is a channel for Blabber that will send messages to campfire.
+Blabber-Campfire is a channel for [Blabber](https://github.com/ppicazo/blabber) that will send messages to campfire.
 
 ## Installation
 
