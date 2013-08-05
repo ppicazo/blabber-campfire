@@ -13,6 +13,7 @@ $ gem install blabber-campfire
 
 ```ruby
 require "blabber"
+require "blabber/campfire"
 
 all_standard_loglevels = ['INFO', 'WARN', 'ERROR', 'DEBUG']
 
